@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" name="f1">
+        <h1>Student Registration Form</h1>
+        <div class="ism">
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname" class="name" />
+        </div>
+        <div class="ism">
+            <label for="listname">List name</label>
+            <input type="text" id="listname" class="name" />
+        </div>
+        <div class="ism">
+            <label for="email">email</label>
+            <input type="email"  id="email"/>
+        </div>
+        <div class="gender">
+            <label>Gender</label>
+            <div class="male">
+                <input id="gender" value="a" type="radio" onchange="changeng()" />Male <input id="gender1" readonly value="b" type="radio" onchange="changeng1()" /> Female
+            </div>
+        </div>
+        <div class="choos">
+            <label>Choos Subjects</label>
+            <div class="input">
+                <input type="checkbox" value="ab"  name="sub" id="choos">OOP
+                <input type="checkbox" value="ab"  name="sub" id="choos">Database
+                <input type="checkbox" value="ab"  name="sub" id="choos">Web technologies
+                <input type="checkbox" value="ab"  name="sub" id="choos">Andiroid Dev
+            </div>
+        </div>
+        <div class="comment">
+            <label for="com">Comments</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="city">
+            <label for="city">City</label>
+            <select  name="f1" id="city">
+                <option  value="----">...</option>
+                <option value="Toshkent">Toshkent</option>
+                <option value="Samarqand">Samarqand</option>
+                <option value="Navoi">Navoi</option>
+            </select>
+        </div>
+        <div class="button">
+            <input class="res" type="reset" value="Reset">
+            <input class="submit" type="submit" id="submit" value="Submit" onclick="kiritish();return false;">
+        </div>
+    </form>
+
+      <script src="./index.js"></script>
+    </div>
+  </body>
+</html>
